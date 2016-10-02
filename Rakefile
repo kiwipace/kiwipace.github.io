@@ -26,7 +26,7 @@ namespace :site do
      # Dir.chdir tmp
      # system "git init"
       system "git add ."
-      message = "Siteupdatedat"
+      message = "Site update #{Time.now.utc}"
       system "git commit -m #{message.inspect}"
      #system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
       system "git push origin master:refs/heads/gh-pages --force"
