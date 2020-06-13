@@ -28,6 +28,10 @@
     
     
     <link rel="stylesheet" href="https://kiwipace.com/scss/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://kiwipace.com/css/toastr.min.css"/>
+    <link rel="stylesheet" href="https://kiwipace.com/css/validation-styles.css"/>
+
   </head>
   <body>
     
@@ -198,7 +202,7 @@
 
 		<h2 class="h2 my-5 text-center">Contact</h2>
 
-		<form action="https://formspree.io/" method="POST">
+		<form name="contact" action="" onsubmit="return false">
 			<div class="row justify-content-md-center">
 			
 				<div class="col-12 col-lg-4 col-md-4 rounded text-dark p-5" style="font-size: 18px">
@@ -211,25 +215,25 @@
 							<div class="col-12 col-lg-6 col-md-6">
 								<div class="form-group">
 									<label>Name</label>
-									<input type="text" name="Name" class="form-control" placeholder="Name">
+									<input type="text" id="fullname" name="fullname" class="form-control" placeholder="Name">
 								</div>
 							</div>
 							<div class="col-12 col-lg-6 col-md-6">
 								<div class="form-group">
 									<label>Email</label>
-									<input type="email" name="Email" class="form-control" placeholder="Email">
+									<input type="email" id="email" name="email" class="form-control" placeholder="Email">
 								</div>
 							</div>
 	
 							<div class="col-12">
 								<div class="form-group">
 									<label>Message</label>
-									<textarea placeholder="Message" name="Message" rows="5" class="form-control"></textarea>
+									<textarea placeholder="Message" id="note" name="note" rows="5" class="form-control"></textarea>
 								</div>
 							</div>
 	
 							<div class="col-12">
-									<button type="submit" class="btn btn-primary">Submit</button>
+									<button type="submit" id="submit" class="btn btn-primary">Submit</button>
 							</div>
 	
 						</div>
@@ -239,6 +243,7 @@
 
 	</div>	
 </section>
+
 	
 
 
@@ -260,7 +265,11 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+    <script src="https://kiwipace.com/js/email.js"></script>
+    <script src="https://kiwipace.com/js/toastr.min.js"></script>
     <script src="https://kiwipace.com/js/script.js"></script>
   </body>
 </html>

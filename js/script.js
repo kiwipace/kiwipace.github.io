@@ -15,8 +15,9 @@
 * Copyright 2018 UICardio
 */
 
-$(document).ready(function(){
-  
+//import * as mail-gunfrom from './node_modules/mail-gun.js/index.js
+
+$(document).ready(function(){  
   //Activating tooltip
   $('[data-toggle="tooltip"]').tooltip();
 
@@ -28,5 +29,6 @@ $(document).ready(function(){
     }, 500);
     return false;
   });
+
 
 });
